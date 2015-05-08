@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  padding: 50px;
+  min-width: 600px;
+  width: auto !important;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 1.4vw;
 }
@@ -125,8 +126,8 @@ label {
 }
 
 .client-app-logo {
-  margin-top: -40px;
   width: 75%;
+  margin-top: 5px;
 }
 
 .client-directory {
