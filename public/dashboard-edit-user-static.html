@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chime</title>
+    <link rel="stylesheet" href='lib/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='stylesheets/style.css' />
+    <link rel="icon" type="image/png" href="images/favicon_01.png">
+  </head>
+  <body>
+
+    <div id="dashboard-navbar" class="navbar-collapse collapse">
+      <div class="row dashboard-navbar-app-logo">
+        <img class="col-xs-1 col-xs-push-1" src="images/logo_01.png">
+      </div>          
+    </div>
+
+    <div class="main-content container-fluid">
+
+      <div class="row text-center">
+        <div class="col-xs-2 col-xs-push-5">
+          <img class="dashboard-org-logo" src="http://members.austinchamber.com/external/wcpages/wcmedia/images/MakerSquare-logo-wordmark3.jpg">
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-8 col-xs-push-2 dashboard-content">
+
+          <div class="row text-center dashboard-large">Edit User</div>
+
+          <div class="row dashboard-directory">
+
+            <form class="col-xs-6 col-xs-push-3">
+
+              <div class="form-group">
+                <label class="text-left dashboard-medium">Name:</label>
+                <input type="text" class="dashboard-input form-control dashboard-small">
+              </div>
+
+              <div class="form-group">
+                <label for="your-name" class="text-left dashboard-medium">Change Photo:</label>
+                <div class="row text-center">
+                  <img id="uploadPreview" class="dashboard-upload-preview">
+                </div>
+                <input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage();" class="dashboard-small ">
+                <script type="text/javascript">
+
+                    function PreviewImage() {
+                        var oFReader = new FileReader();
+                        oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+                        oFReader.onload = function (oFREvent) {
+                            document.getElementById("uploadPreview").src = oFREvent.target.result;
+                        };
+                    };
+
+                </script>
+              </div>
+
+
+              <div class="form-group">
+                <label class="text-left dashboard-medium">Title:</label>
+                <input type="text" class="dashboard-input form-control dashboard-small">
+              </div>
+
+              <div class="form-group">
+                <label class="text-left dashboard-medium">Department:</label>
+                <input type="text" class="dashboard-input form-control dashboard-small">
+              </div>
+
+              <div class="form-group">
+                <label class="text-left dashboard-medium">Phone number:</label>
+                <input type="number" class="dashboard-input form-control dashboard-small">
+              </div>
+
+              <div class="form-group">
+                <label class="text-left dashboard-medium">Email:</label>
+                <input type="email" class="dashboard-input form-control dashboard-small">
+              </div>
+
+              <div class="col-xs-4 col-xs-push-4">
+                <button type="submit" class="btn btn-default dashboard-medium dashboard-button-medium">Submit</button>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <!--<script src="./build/client.js"></script>-->
+  </body>
+</html>
