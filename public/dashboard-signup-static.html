@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chime</title>
-    <link rel="stylesheet" href="build/bundle.min.css" />
-    <link rel="icon" type="image/png" href="images/favicon_01.png">
+    <!-- <link rel="stylesheet" href="build/bundle.min.css" /> -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/dashboard-style.css">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
   </head>
+  
   <body>
 
-    <div id="dashboard-navbar" class="navbar-collapse collapse">
-      <div class="row dashboard-navbar-app-logo">
-        <img class="col-xs-1 col-xs-push-1" src="images/logo_01.png">
-      </div>          
-    </div>
+    <nav class="navbar navbar-default dashboard-navbar">
+      <div class="container-fluid">
+        <div class="col-xs-1 col-xs-push-1 navbar-header">
+          <img class="dashboard-navbar-app-logo" src="images/logo_03.png">
+        </div>
+      </div>
+    </nav>
 
     <div class="main-content container-fluid">
 
-      <div class="row text-center">
+      <div class="row">
 
         <div class="col-xs-6 col-xs-push-3 dashboard-content">
 
@@ -26,19 +31,19 @@
 
           <form class="dashboard-ping-form col-xs-6 col-xs-push-3">
             <div class="form-group">
-              <label for="your-name" class="col-xs-12 text-left dashboard-medium">Organization name:</label>
+              <label for="your-name" class="text-left dashboard-medium">Organization name:</label>
               <input type="email" class="dashboard-input form-control dashboard-small" id="your-name">
             </div>
             <div class="form-group">
-              <label for="your-name" class="col-xs-12 text-left dashboard-medium">Email:</label>
+              <label for="your-name" class="text-left dashboard-medium">Email:</label>
               <input type="email" class="dashboard-input form-control dashboard-small" id="your-name">
             </div>
             <div class="form-group">
-              <label for="your-message" class="col-xs-12 text-left dashboard-medium">Password:</label>
+              <label for="your-message" class="text-left dashboard-medium">Password:</label>
               <input type="password" class="dashboard-input form-control dashboard-small" id="your-message">
             </div>
             <div class="form-group">
-              <label for="your-message" class="col-xs-12 text-left dashboard-medium">Password:</label>
+              <label for="your-message" class="text-left dashboard-medium">Password:</label>
               <input type="password" class="dashboard-input form-control dashboard-small" id="your-message">
             </div>
             <div class="col-xs-4 col-xs-push-4">
@@ -50,7 +55,7 @@
 
       </div>
     
-    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <!--<script src="./build/client.js"></script>-->
   </body>
 </html>
