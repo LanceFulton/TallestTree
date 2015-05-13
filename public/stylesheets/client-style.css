@@ -123,7 +123,7 @@ label {
 .client-org-logo-welcome {
   margin-top: 100px;
   margin-bottom: 20px;
-  width: 40%;
+  max-width: 50%;
 }
 
 .client-org-logo-directory {
@@ -189,6 +189,9 @@ label {
 
 .client-ping-avatar {
   margin-top: 20px;
+  border: solid 1px #FFF;
+  width: 200px;
+  height: 200px;
 }
 
 .client-button {

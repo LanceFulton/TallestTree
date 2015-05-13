@@ -75,10 +75,6 @@ label {
   font-weight: 300;
 }
 
-.member-list {
-  margin: 20px 0;
-}
-
 .btn {
   border: 1px solid #FFF;
   background-color: rgba(0,0,0,0);
@@ -161,8 +157,6 @@ label {
 }
 
 .dashboard-input {
-  color: #000;
-  font-weight: 300;
   border-radius: 0px;
 }
 
