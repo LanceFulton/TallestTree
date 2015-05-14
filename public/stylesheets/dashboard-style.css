@@ -6,11 +6,6 @@ body {
   min-width: 600px;
   width: auto !important;
   font-size: 1.4vw;
-  background-image: url(../images/background_01.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: static;
 }
 
 .col-xs-1-5,
@@ -98,6 +93,15 @@ label {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+}
+
+.dashboard-photo-background {
+  min-height: 100vh;
+  max-width: 100vw;
+  background-image: url(../images/background_01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .dashboard-navbar {
@@ -328,5 +332,5 @@ label {
 }
 
 .test {
-  border: solid 1px #000;
+  border: solid 2px #000;
 }
