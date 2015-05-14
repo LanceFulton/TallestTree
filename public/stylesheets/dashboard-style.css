@@ -40,7 +40,7 @@ body {
   .col-xs-1-5 {
     width: 20%;
     float: left;
-  } 
+  }
 }
 
 @media (min-width: 768px) {
@@ -49,12 +49,14 @@ body {
     float: left;
   }
 }
+
 @media (min-width: 992px) {
   .col-md-1-5 {
     width: 20%;
     float: left;
   }
 }
+
 @media (min-width: 1200px) {
   .col-lg-1-5 {
     width: 20%;
@@ -63,11 +65,12 @@ body {
 }
 
 a {
-  color: #297ACC;
+  color: #5495D6;
+  font-weight: 300;
 }
 
 a:hover {
-  color: #1F5C99;
+  color: #297ACC;
   text-decoration: none;
 }
 
@@ -83,7 +86,17 @@ label {
 }
 
 .btn:hover {
-  background-color: #FFF
+  background-color: #FFF;
+}
+
+.relative {
+  position: relative;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .dashboard-navbar {
@@ -105,8 +118,8 @@ label {
 }
 
 .dashboard-app-logo {
-  width: 120%;
-  margin-left: -25px;
+  width: 80%;
+  margin-left: 10%;
   margin-bottom: 50px;
 }
 
@@ -118,15 +131,36 @@ label {
   margin-top: 20px;
 }
 
+.dashboard-button-small {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 75%;
+}
+
 .dashboard-button-grey {
   background-color: #E6E6E6;
+}
+
+.dashboard-button-launch {
+  margin-bottom: 25px;
+  margin-left: 12.5%;
+}
+
+.dashboard-button-launch:hover {
+  border: 1px solid #FFF;
 }
 
 .dashboard-content {
   margin-top: 50px;
   margin-bottom: 100px;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 50px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.dashboard-content-short {
+  margin-top: 30px;
+  margin-bottom: -20px;
   background-color: rgba(0,0,0,0.7);
 }
 
@@ -137,6 +171,13 @@ label {
   margin-bottom: 50px;
 }
 
+.dashboard-extralarge-features {
+  font-weight: 100;
+  color: #000;
+  font-size: 3.5vw;
+  margin-bottom: 50px;
+}
+
 .dashboard-large {
   font-weight: 100;
   color: #FFF;
@@ -144,9 +185,22 @@ label {
   margin-bottom: 30px;
 }
 
+.dashboard-large-features {
+  font-weight: 100;
+  color: #000;
+  font-size: 2.2vw;
+  margin-bottom: 30px;
+}
+
 .dashboard-medium {
   font-weight: 100;
   color: #FFF;
+  font-size: 1.5vw;
+}
+
+.dashboard-medium-features {
+  font-weight: 100;
+  color: #000;
   font-size: 1.5vw;
 }
 
@@ -163,6 +217,11 @@ label {
 .dashboard-org-logo {
   margin-top: 70px;
   width: 50%;
+}
+
+.dashboard-org-logo-2 {
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .dashboard-directory {
@@ -214,6 +273,18 @@ label {
   margin-bottom: 30px;
   width: 150px;
   height: 150px;
+}
+
+.dashboard-features-white {
+  background-color: #FFF;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.dashboard-features-grey {
+  background-color: #F0F0F0;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
 .test {
