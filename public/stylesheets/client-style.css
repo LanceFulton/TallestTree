@@ -17,7 +17,7 @@ body {
 
 
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: stati;
 }
 
 .container-fluid .row {
@@ -124,9 +124,9 @@ label {
 }
 
 .client-org-logo-welcome {
-  margin-top: 100px;
+  margin-top: 75px;
   margin-bottom: 20px;
-  max-width: 50%;
+  max-width: 75%;
 }
 
 .client-org-logo-directory {

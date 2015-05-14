@@ -7,9 +7,10 @@ body {
   width: auto !important;
   font-size: 1.4vw;
   background-image: url(../images/background_01.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: static;
 }
 
 .col-xs-1-5,
@@ -131,6 +132,17 @@ label {
   margin-top: 20px;
 }
 
+.dashboard-button-medium-black {
+  color: #000 !important;
+  border: solid 1px #000;
+}
+
+.dashboard-button-medium-black:hover {
+  background-color: #000;
+  color: #FFF !important;
+  border: solid 1px #FFF;
+}
+
 .dashboard-button-small {
   margin-top: 20px;
   margin-bottom: 50px;
@@ -154,6 +166,14 @@ label {
   margin-top: 50px;
   margin-bottom: 100px;
   padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.dashboard-content-splash {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-top: 120px;
   padding-bottom: 50px;
   background-color: rgba(0,0,0,0.7);
 }
@@ -198,6 +218,12 @@ label {
   font-size: 1.5vw;
 }
 
+.dashboard-medium-intro {
+  font-weight: 100;
+  color: #FFF;
+  font-size: 1.8vw;
+}
+
 .dashboard-medium-features {
   font-weight: 100;
   color: #000;
@@ -208,6 +234,16 @@ label {
   font-weight: 100;
   color: #FFF;
   font-size: 1.2vw;
+}
+
+.dashboard-glyphicons {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 3em;
+  margin-top: 50px;
+}
+
+.dashboard-glyphicons:hover {
+  color: rgba(255, 255, 255, 1);
 }
 
 .dashboard-input {
@@ -285,6 +321,10 @@ label {
   background-color: #F0F0F0;
   padding-top: 75px;
   padding-bottom: 75px;
+}
+
+#dashboard-features-bottom {
+  padding-bottom: 200px;
 }
 
 .test {
